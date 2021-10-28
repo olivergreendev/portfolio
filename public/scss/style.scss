@@ -1,0 +1,12 @@
+@import './colors';
+@import './fonts';
+@import './globals';
+
+@import './navbar';
+@import './footer';
+
+@import './index';
+@import './netflix';
+
+// IMPORT MEDIA QUERIES LAST
+@import './media-queries';

@@ -1,0 +1,127 @@
+.header {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header.large {
+    background: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('../img/hero_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header.small {
+    background: radial-gradient(ellipse at bottom, #0D1E31 25%, #111) !important;
+}
+
+.large {
+    min-height: 100vh;
+}
+
+.small {
+    height: 15vh;
+    max-height: 926px;
+}
+
+nav {
+    display: flex;
+    // padding: 0 60px;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+
+    img {
+        width: 250px;
+    }
+
+    .title-logo {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+nav .fas {
+    display: none;
+}
+
+.nav-logo-frame {
+    height: 35px;
+    position: relative;
+}
+
+.nav-logo {
+    max-width: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    touch-action: none;
+
+    ul {
+        padding: 0px;
+    }
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    &:not(:last-child):after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f25264;
+        display: block;
+        margin: 5px auto;
+        transition: width 0.3s;
+    }
+
+    &:not(:last-child):hover::after {
+        width: 100%;
+    }
+
+    &:last-child {
+        padding-right: 0 !important;
+    }
+}
+
+.navbar-btn--download {
+    padding: 15px 40px;
+    background: $portfolio-accent02; //#f25264
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+    position: relative;
+    display: inline-block;
+    color: $portfolio-accent01 !important;
+    font-weight: 600 !important;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

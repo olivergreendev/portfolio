@@ -1,0 +1,311 @@
+.jumbo-text {
+    position: fixed;
+    display: inline-block;
+    font-size: 160px;
+    margin-left: -50px;
+    z-index: -10;
+    font-weight: 800;
+}
+
+.rot-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+}
+
+.intro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .intro-information {
+        max-width: 575px;
+
+        .primary-text {
+            color: $portfolio-accent01;
+        }
+    }
+    .intro-headshot {
+        width: 100%;
+        text-align: right;
+
+        img {
+            width: 350px;
+            // border-radius: 50%;
+            border-radius: 40px 40px 0 40px;
+        }
+    }
+
+    .primary-text {
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 75%;
+            top: 18px;
+            left: -10px;
+            background: $portfolio-accent02;
+            z-index: -1;
+        }
+    }
+    .secondary-text {
+        font-weight: 400;
+    }
+}
+
+.intro .social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .icon {
+        cursor: pointer;
+        margin: 0 20px;
+
+        i {
+            font-size: 25px;
+            color: #fff;
+            transition: color 0.2s ease;
+        }
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        &:nth-child(5) {
+            margin-right: 0;
+        }
+
+        &:hover i {
+            color: $portfolio-accent01;
+        }
+    }
+}
+
+.top-projects {
+    .top-projects--title h6 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-family: 'Cubano', sans-serif;
+        font-size: 20px;
+    }
+    .top-projects--wrapper {
+        position: relative;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        margin-bottom: 100px;
+
+        .top-projects--project-item {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100%;
+
+            &:hover {
+                .project-item--title {
+                    transform: translateY(100px);
+                }
+                .project-item--image {
+                    transform: translateY(-30px);
+                }
+            }
+
+            .project-item--inner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: start;
+                -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+                background-color: #1d1d1d;
+                color: #f0f2f3;
+                text-decoration: none;
+                transition: background-color 0.3s cubic-bezier(.23,1,.32,1);
+
+                &:hover {
+                    background-color: #202020;
+                }
+
+                .project-item--parent-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    .project-item--title {
+                        font-family: 'Cubano', sans-serif;
+                        width: 100%;
+                        height: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        position: absolute;
+                        top: -100px;
+                        transition: transform 0.2s ease;
+                    }
+
+                    .project-item--image {
+                        height: 79%;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -30px;
+                        transition: transform 0.2s ease;
+    
+                        .project-item--wrapper {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+    
+                            img {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                right: 0;
+                                bottom: auto;
+                                width: 90%;
+                                height: 100%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                object-fit: cover;
+                                object-position: 50% 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.other-projects {
+    .other-projects--title h6 {
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-family: 'Cubano', sans-serif;
+        font-size: 20px;
+    }
+    .other-projects--wrapper {
+        position: relative;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        margin-bottom: 100px;
+
+        .other-projects--project-item {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100%;
+
+            &:hover {
+                // .other-projects--project-item__title {
+                //     transform: translateY(100px);
+                // }
+                .other-projects--project-item__image {
+                    transform: translateY(-30px);
+                }
+            }
+
+            .other-projects--project-item__inner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: start;
+                -webkit-align-items: flex-start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+                background-color: #1d1d1d;
+                color: #f0f2f3;
+                text-decoration: none;
+                transition: background-color 0.3s cubic-bezier(.23,1,.32,1);
+
+                &:hover {
+                    background-color: #202020;
+                }
+
+                .other-projects--project-item__wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    .other-projects--project-item__title {
+                        font-family: 'Cubano', sans-serif;
+                        width: 100%;
+                        height: 80px;
+                        line-height: 80px;
+                        text-align: center;
+                        position: absolute;
+                        top: 0;
+                        transition: transform 0.2s ease;
+                    }
+
+                    .other-projects--project-item__image {
+                        height: 79%;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -30px;
+                        transition: transform 0.2s ease;
+
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: auto;
+                            width: 90%;
+                            height: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            object-fit: cover;
+                            object-position: 50% 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.other-projects--project-item__image { }

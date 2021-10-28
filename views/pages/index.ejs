@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- ACROSS ALL VIEWS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+</head>
+<body>
+    <!-- NO WEBSITE BUILDERS HERE :) -->
+    <!-- Sidebar/Navbar -->
+    <%- include('../partials/_navbar.ejs') %>
+    <!-- Main Body -->
+    <main class="relative">
+        <h1 class="jumbo-text rot-text no-select terniary-text">ABOUT</h1>
+        <section class="container">
+            <div class="intro">
+                <div class="intro-information">
+                    <h1 class="primary-text">Full Stack Developer.</h1>
+                    <h5 class="secondary-text">Hello! I'm Olly, a Junior/Entry Level Full Stack developer with a passion for crafting clean and responsive UI/UX applications. I love both Front and Back-End development, and can be flexible to fit either role respectively.</h5>
+                    <div class="social-icons">
+                        <div class="icon">
+                            <a href="https://github.com/olivergreendev?tab=repositories" target="_blank">
+                                <i class='bx bxl-github' ></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://twitter.com/itsmeolee" target="_blank">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/oliverxgreen/" target="_blank">
+                                <i class='bx bxl-linkedin' ></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="mailto:oliverxingugreen@gmail.com">
+                                <i class='bx bxs-envelope' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-headshot">
+                    <img src="img/headshot.jpeg" alt="">
+                </div>
+            </div>
+            <div class="top-projects">
+                <div class="top-projects--title">
+                    <h6 class="no-select secondary-text m-0" style="margin-bottom: 0.5rem;">MY BEST WORK</h6>
+                </div>
+                <div class="top-projects--wrapper">
+                    <div class="top-projects--project-item">
+                        <a href="/projects/netflix" class="project-item--inner">
+                            <div class="project-item--parent-wrapper">
+                                <div class="project-item--title">
+                                    <h3>NOT NETFLIX</h3>
+                                </div>
+                                <div class="project-item--image">
+                                    <div class="project-item--wrapper">
+                                        <img src="img/app-netflix.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-projects--project-item">
+                        <a href="/projects/blog" class="project-item--inner">
+                            <div class="project-item--parent-wrapper">
+                                <div class="project-item--title">
+                                    <h3>BLOG</h3>
+                                </div>
+                                <div class="project-item--image">
+                                    <div class="project-item--wrapper">
+                                        <img src="img/app-placeholder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-projects--project-item">
+                        <a href="/projects/movie-search" class="project-item--inner">
+                            <div class="project-item--parent-wrapper">
+                                <div class="project-item--title">
+                                    <h3>MOVIE SEARCH SITE</h3>
+                                </div>
+                                <div class="project-item--image">
+                                    <div class="project-item--wrapper">
+                                        <img src="img/app-placeholder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-projects--project-item">
+                        <a href="/projects/e-commerce" class="project-item--inner">
+                            <div class="project-item--parent-wrapper">
+                                <div class="project-item--title">
+                                    <h3>E-COMMERCE SITE</h3>
+                                </div>
+                                <div class="project-item--image">
+                                    <div class="project-item--wrapper">
+                                        <img src="img/app-placeholder.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Background Glows -->
+        <div class="bg-glow top right"></div>
+        <div class="bg-glow bottom left"></div>
+    </main>
+    <%- include('../partials/_footer.ejs') %>
+
+    <script src="/js/client-sidenav.js" async defer></script>
+    <script src="/js/client-bg-glow-fade.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer></script>
+</body>
+</html>
