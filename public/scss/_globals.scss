@@ -16,6 +16,12 @@ body {
     color: #fff;
 }
 
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .container {
     max-width: 1200px;
     overflow: hidden;

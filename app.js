@@ -6,7 +6,7 @@ const routes = require('./routes/index.js');
 
 // App Variables
 const app = express();
-const port = process.env.PORT || "8000"
+const port = process.env.PORT || 8000;
 
 // App Configuration
 app.set("views", path.join(__dirname, "views/pages"));

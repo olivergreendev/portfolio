@@ -16,13 +16,12 @@
     grid-row-gap: 4px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    // padding: 0 15px;
 
     .banner {
         position: relative;
         overflow: hidden;
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
         background: #1d1d1d;
 
         .banner-image {
@@ -30,6 +29,28 @@
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .banner__preview-button {
+            text-align: center;
+            padding: 30px;
+
+            button {
+                padding: 20px 30px;
+                border-radius: 16px;
+                border: none;
+                font-family: 'Cubano', sans-serif;
+                background-color: rgba(122, 212, 116, 0.1);
+                border: 2px solid rgba(122, 212, 116, 1.0);
+                color: rgba(122, 212, 116, 1.0);
+                letter-spacing: 1px;
+                font-size: 16px;
+                transition: transform 0.15s ease-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
