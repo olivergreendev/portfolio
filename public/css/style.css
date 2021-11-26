@@ -85,7 +85,7 @@
 
 @font-face {
   font-family: 'Cubano';
-  src: url("Cubano-Regular.woff2") format("woff2"), url("Cubano-Regular.woff") format("woff");
+  src: url("../fonts/Cubano/Cubano-Regular.woff2") format("woff2"), url("../fonts/Cubano/Cubano-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
