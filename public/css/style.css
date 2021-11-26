@@ -1,6 +1,134 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+@font-face {
+  font-family: 'Cubano';
+  src: url("../fonts/Cubano/Cubano-Regular.woff2") format("woff2"), url("../fonts/Cubano/Cubano-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cubano';
+  src: url("Cubano-Regular.woff2") format("woff2"), url("Cubano-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Bold.woff2") format("woff2"), url("../fonts/Gordita-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-BlackItalic.woff2") format("woff2"), url("../fonts/Gordita-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-BoldItalic.woff2") format("woff2"), url("../fonts/Gordita-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-LightItalic.woff2") format("woff2"), url("../fonts/Gordita-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Black.woff2") format("woff2"), url("../fonts/Gordita-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-MediumItalic.woff2") format("woff2"), url("../fonts/Gordita-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Medium.woff2") format("woff2"), url("../fonts/Gordita-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Regular.woff2") format("woff2"), url("../fonts/Gordita-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Light.woff2") format("woff2"), url("../fonts/Gordita-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-ThinItalic.woff2") format("woff2"), url("../fonts/Gordita-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-RegularItalic.woff2") format("woff2"), url("../fonts/Gordita-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita Ultra';
+  src: url("../fonts/Gordita-UltraItalic.woff2") format("woff2"), url("../fonts/Gordita-UltraItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita Ultra';
+  src: url("../fonts/Gordita-Ultra.woff2") format("woff2"), url("../fonts/Gordita-Ultra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gordita';
+  src: url("../fonts/Gordita-Thin.woff2") format("woff2"), url("../fonts/Gordita-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 .gray-text-dark {
   color: #627597;
 }
@@ -81,22 +209,6 @@
 
 .secondary-accent {
   color: #291c1e;
-}
-
-@font-face {
-  font-family: 'Cubano';
-  src: url("../fonts/Cubano/Cubano-Regular.woff2") format("woff2"), url("../fonts/Cubano/Cubano-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cubano';
-  src: url("Cubano-Regular.woff2") format("woff2"), url("Cubano-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 html {
