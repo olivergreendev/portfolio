@@ -83,6 +83,22 @@
   color: #291c1e;
 }
 
+@font-face {
+  font-family: 'Cubano';
+  src: url("Cubano-Regular.woff2") format("woff2"), url("Cubano-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cubano';
+  src: url("Cubano-Regular.woff2") format("woff2"), url("Cubano-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
