@@ -940,12 +940,28 @@ nav .fas {
   margin-right: auto;
 }
 
-.project-banner-wrapper .banner .banner__preview-button {
+.project-banner-wrapper .banner .banner__preview-buttons {
   text-align: center;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.project-banner-wrapper .banner .banner__preview-button button {
+.project-banner-wrapper .banner .banner__preview-buttons .banner__preview-buttons--button {
+  margin: 0.5rem;
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons button {
   padding: 20px 30px;
   border-radius: 16px;
   border: none;
@@ -961,7 +977,7 @@ nav .fas {
   transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
 }
 
-.project-banner-wrapper .banner .banner__preview-button button:hover {
+.project-banner-wrapper .banner .banner__preview-buttons button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -1008,7 +1024,7 @@ nav .fas {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 36px;
-  background-image: url(/img/list-bullet-orange.svg);
+  background-image: url(/img/list-bullet-red.svg);
   background-position: 0 50%;
   background-size: 18px;
   background-repeat: no-repeat;

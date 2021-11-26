@@ -31,9 +31,17 @@
             margin-right: auto;
         }
 
-        .banner__preview-button {
+        .banner__preview-buttons {
             text-align: center;
             padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .banner__preview-buttons--button {
+                margin: 0.5rem;
+            }
 
             button {
                 padding: 20px 30px;
@@ -94,7 +102,7 @@
         padding-top: 6px;
         padding-bottom: 6px;
         padding-left: 36px;
-        background-image: url(/img/list-bullet-orange.svg);
+        background-image: url(/img/list-bullet-red.svg);
         background-position: 0 50%;
         background-size: 18px;
         background-repeat: no-repeat;
