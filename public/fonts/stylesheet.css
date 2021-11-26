@@ -130,7 +130,7 @@
     font-family: 'Cubano';
     src: url('/fonts/Cubano.woff2') format('woff2'),
          url('/fonts/Cubano.woff2') format('woff');
-    font-weight: normal;
+    /* font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: swap; */
 }
