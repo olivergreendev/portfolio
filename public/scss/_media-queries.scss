@@ -1,21 +1,17 @@
 @media only screen and (max-width: 480px) {
-
     #hide_menu {
         padding: 13px 8px 0 0 !important;
     }
 }
 
 @media only screen and (max-width: 810px) {
-
     nav {
         padding: 40px 30px !important;
     }
-
     .container {
         padding-left: 30px;
         padding-right: 30px;
     }
-
     .intro {
         flex-direction: column;
 
@@ -27,14 +23,12 @@
             }
         }
     }
-
     .top-projects .top-projects--wrapper {
         grid-template-columns: 1fr !important;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-
     .nav-links {
         position: absolute;
         background: #000;
@@ -45,15 +39,12 @@
         text-align: center !important;
         z-index: 100;
         transition: top 0.5s;
-    
         li {
             display: block !important;
         }
-    
         ul {
             padding-top: 20px;
             margin: 0;
-
             li:not(:last-child):hover::after {
                 width: 20% !important;
             }
@@ -77,7 +68,7 @@
         text-align: right;
         padding: 33px 52px 0px 0px;
     }
-
+    
     #show_menu {
         padding: 0;
         margin: 0;

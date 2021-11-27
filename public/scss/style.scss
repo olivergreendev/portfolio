@@ -1,12 +1,13 @@
+// Import these first
 @import './fonts';
 @import './colors';
 @import './globals';
-
+// Partials
 @import './navbar';
 @import './footer';
-
+@import './notification-banner';
+// General imports
 @import './index';
 @import './netflix';
-
-// IMPORT MEDIA QUERIES LAST
+// Import media queries last
 @import './media-queries';
