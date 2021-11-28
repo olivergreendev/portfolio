@@ -587,34 +587,6 @@ nav .fas {
   position: relative;
 }
 
-#notification-banner:hover:after {
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 3px;
-  color: #f6f6f6;
-  content: "Feel free to let me know of any issues you find using the Contact form, thank you!";
-  font: bold 12px/30px sans-serif;
-  height: 30px;
-  left: 50%;
-  margin-left: -60px;
-  position: fixed;
-  text-align: center;
-  bottom: -100px;
-  width: 500px;
-}
-
-#notification-banner:hover:before {
-  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  content: '';
-  height: 0;
-  left: 50%;
-  margin-left: -10px;
-  position: fixed;
-  bottom: 80px;
-  width: 0;
-}
-
 @-webkit-keyframes notification-banner {
   0% {
     opacity: 0;
