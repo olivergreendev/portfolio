@@ -2,11 +2,9 @@ html {
     font-size: 100%;
     box-sizing: border-box;
 }
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -15,13 +13,11 @@ body {
     background-color: $portfolio-bg;
     color: #fff;
 }
-
 button {
     &:hover {
         cursor: pointer;
     }
 }
-
 .container {
     max-width: 1200px;
     overflow: hidden;
@@ -30,7 +26,6 @@ button {
     padding-top: 100px;
     margin: 0 auto;
 }
-
 .no-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -39,7 +34,6 @@ button {
                 -ms-user-select: none;
                     user-select: none;
 }
-
 .m-0 {
     margin: 0;
 }
@@ -58,7 +52,6 @@ button {
 .pb-100 {
     padding-bottom: 100px;
 }
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2 , h3, h4, h5, h6 {
     font-weight: 500;
     margin: 0;
@@ -83,12 +76,10 @@ button {
 .h6, h6 {
     font-size: 1rem;
 }
-
 ::selection {
     background: $portfolio-accent01;
     color: #fff;
 }
-
 .flex {
     display: flex;
 }
@@ -98,7 +89,6 @@ button {
 .flex-row {
     flex-direction: row;
 }
-
 .top {
     top: 0;
 }
@@ -111,11 +101,9 @@ button {
 .left {
     left: 0;
 }
-
 .relative {
     position: relative;
 }
-
 .bg-glow {
     position: absolute;
     width: 1px;
