@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/* Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Quicksand */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+/* Cubano */
 @font-face {
   font-family: 'Cubano';
   src: url("../fonts/Cubano/Cubano-Regular.woff2") format("woff2"), url("../fonts/Cubano/Cubano-Regular.woff") format("woff");
@@ -9,6 +12,7 @@
   font-display: swap;
 }
 
+/* Gordita */
 @font-face {
   font-family: 'Gordita';
   src: url("../fonts/Gordita-Bold.woff2") format("woff2"), url("../fonts/Gordita-Bold.woff") format("woff");
@@ -229,7 +233,7 @@ button:hover {
 .container {
   max-width: 1200px;
   overflow: hidden;
-  padding-top: 100px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -361,6 +365,30 @@ button:hover {
   transition: opacity 0.6s ease;
 }
 
+.h1, h1 {
+  font-size: 2.5rem;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+}
+
+.h4, h4 {
+  font-size: 1.5rem;
+}
+
+.h5, h5 {
+  font-size: 1.25rem;
+}
+
+.h6, h6 {
+  font-size: 1rem;
+}
+
 .header {
   width: 100%;
   background-position: center;
@@ -393,6 +421,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 30px;
   margin: 0 auto;
   max-width: 1200px;
   -webkit-box-pack: justify;
@@ -565,8 +594,8 @@ nav .fas {
 }
 
 .notification-banner {
-  background-color: #0a84ff;
-  color: #f6f6f6;
+  background-color: #263026;
+  color: #7ad474;
   display: block;
   font: bold 16px/40px sans-serif;
   height: 40px;
@@ -1072,6 +1101,58 @@ nav .fas {
   font-weight: 400;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.intro-information {
+  -webkit-animation: fadeIn 1.5s, slideUp 0.5s;
+          animation: fadeIn 1.5s, slideUp 0.5s;
+}
+
+.intro-headshot {
+  -webkit-animation: fadeIn 1.5s, slideUp 0.5s;
+          animation: fadeIn 1.5s, slideUp 0.5s;
+}
+
+@media only screen and (max-width: 414px) {
+  .intro .intro-headshot img {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #hide_menu {
     padding: 13px 8px 0 0 !important;
@@ -1079,9 +1160,6 @@ nav .fas {
 }
 
 @media only screen and (max-width: 810px) {
-  nav {
-    padding: 40px 30px !important;
-  }
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -1096,7 +1174,7 @@ nav .fas {
     text-align: center !important;
   }
   .intro .intro-headshot img {
-    width: 250px !important;
+    width: 250px;
   }
   .top-projects .top-projects--wrapper {
     -ms-grid-columns: 1fr !important;
@@ -1135,7 +1213,7 @@ nav .fas {
     cursor: pointer;
   }
   nav {
-    padding-top: 40px !important;
+    padding-top: 30px;
   }
   #hide_menu {
     text-align: right;

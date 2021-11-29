@@ -1,25 +1,28 @@
+@media only screen and (max-width: 414px) {
+    .intro {
+        .intro-headshot {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 480px) {
     #hide_menu {
         padding: 13px 8px 0 0 !important;
     }
 }
-
 @media only screen and (max-width: 810px) {
-    nav {
-        padding: 40px 30px !important;
-    }
     .container {
         padding-left: 30px;
         padding-right: 30px;
     }
     .intro {
         flex-direction: column;
-
         .intro-headshot {
             text-align: center !important;
-
             img {
-                width: 250px !important;
+                width: 250px;
             }
         }
     }
@@ -27,7 +30,6 @@
         grid-template-columns: 1fr !important;
     }
 }
-
 @media only screen and (max-width: 1024px) {
     .nav-links {
         position: absolute;
@@ -50,7 +52,6 @@
             }
         }
     }
-    
     nav .fas {
         display: block;
         color: #fff;
@@ -58,36 +59,28 @@
         font-size: 22px;
         cursor: pointer;
     }
-    
     nav {
-        // padding: 40px 60px;
-        padding-top: 40px !important;
+        padding-top: 30px;
     }
-    
     #hide_menu {
         text-align: right;
         padding: 33px 52px 0px 0px;
     }
-    
     #show_menu {
         padding: 0;
         margin: 0;
         display: block;
     }
-
     #hide_menu {
         display: block;
     }
 }
-
 @media only screen and (max-width: 1920px) {
-
     .jumbo-text {
         font-size: 120px;
         margin-left: -35px;
     }
 }
-
 /**
 * Mobile Devices: 360x640 through 414x896
 * Tablet Devices: 601x962 through 1280x800

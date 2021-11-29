@@ -4,40 +4,33 @@
     background-size: cover;
     position: relative;
 }
-
 .header.large {
     background: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url('../img/hero_bg.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
 }
-
 .header.small {
     background: radial-gradient(ellipse at bottom, #0D1E31 25%, #111) !important;
 }
-
 .large {
     min-height: 100vh;
 }
-
 .small {
     height: 15vh;
     max-height: 926px;
 }
-
 nav {
     display: flex;
-    // padding: 0 60px;
+    padding: 0 30px;
     margin: 0 auto;
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-
     img {
         width: 250px;
     }
-
     .title-logo {
         color: white;
         text-decoration: none;
@@ -45,16 +38,13 @@ nav {
         font-weight: 600;
     }
 }
-
 nav .fas {
     display: none;
 }
-
 .nav-logo-frame {
     height: 35px;
     position: relative;
 }
-
 .nav-logo {
     max-width: 150px;
     position: absolute;
@@ -67,17 +57,14 @@ nav .fas {
     border-radius: 6px;
     padding: 15px;
 }
-
 .nav-links {
     flex: 1;
     text-align: right;
     touch-action: none;
-
     ul {
         padding: 0px;
     }
 }
-
 .nav-links ul li {
     list-style: none;
     display: inline-block;
@@ -85,13 +72,11 @@ nav .fas {
     position: relative;
     cursor: pointer;
     font-weight: 500;
-
     a {
         color: #fff;
         text-decoration: none;
         font-size: 16px;
     }
-
     &:not(:last-child):after {
         content: '';
         width: 0%;
@@ -101,16 +86,13 @@ nav .fas {
         margin: 5px auto;
         transition: width 0.3s;
     }
-
     &:not(:last-child):hover::after {
         width: 100%;
     }
-
     &:last-child {
         padding-right: 0 !important;
     }
 }
-
 .navbar-btn--download {
     padding: 15px 40px;
     background: $portfolio-accent02; //#f25264
@@ -120,7 +102,6 @@ nav .fas {
     display: inline-block;
     color: $portfolio-accent01 !important;
     font-weight: 600 !important;
-
     &:hover {
         transform: translateY(-5px);
     }

@@ -2,6 +2,7 @@
 @import './fonts';
 @import './colors';
 @import './globals';
+@import './typo';
 // Partials
 @import './navbar';
 @import './footer';
@@ -9,5 +10,6 @@
 // General imports
 @import './index';
 @import './netflix';
+@import './animations';
 // Import media queries last
 @import './media-queries';

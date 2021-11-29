@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideUp {
+    0% { margin-top: 50px; }
+    100% { margin-top: 0; }
+}
+.intro-information {
+    animation: fadeIn 1.5s, slideUp 0.5s;
+}
+.intro-headshot {
+    animation: fadeIn 1.5s, slideUp 0.5s;
+}
