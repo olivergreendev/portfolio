@@ -64,6 +64,10 @@ nav .fas {
     ul {
         padding: 0px;
     }
+    #hide_menu {
+        padding: 30px 22px 0 0;
+        text-align: right;
+    }
 }
 .nav-links ul li {
     list-style: none;
@@ -95,7 +99,7 @@ nav .fas {
 }
 .navbar-btn--download {
     padding: 15px 40px;
-    background: $portfolio-accent02; //#f25264
+    background: $portfolio-accent02;
     border-radius: 6px;
     transition: 0.3s ease-out;
     position: relative;

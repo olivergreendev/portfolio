@@ -5,9 +5,8 @@
     text-align: center;
     font-weight: 700;
     color: $portfolio-brand01;
-    font-size: clamp(40px, 6vw, 120px);
+    font-size: clamp(60px, 9vw, 120px);
 }
-
 .project-banner-wrapper {
     position: relative;
     display: grid;
@@ -16,21 +15,18 @@
     grid-row-gap: 4px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-
     .banner {
         position: relative;
         overflow: hidden;
         padding-top: 80px;
         padding-bottom: 40px;
         background: #1d1d1d;
-
         .banner-image {
             display: block;
             width: 85%;
             margin-left: auto;
             margin-right: auto;
         }
-
         .banner__preview-buttons {
             text-align: center;
             padding: 30px;
@@ -38,65 +34,76 @@
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-
-            .banner__preview-buttons--button {
-                margin: 0.5rem;
-            }
-
             button {
-                padding: 20px 30px;
-                border-radius: 16px;
+                padding: 10px;
+                border-radius: 10px;
                 border: none;
+                margin: 0.5rem;
                 font-family: 'Cubano', sans-serif;
-                background-color: rgba(122, 212, 116, 0.1);
-                border: 2px solid rgba(122, 212, 116, 1.0);
-                color: rgba(122, 212, 116, 1.0);
                 letter-spacing: 1px;
                 font-size: 16px;
                 transition: transform 0.15s ease-out;
-
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
+                }
+                span {
+                    display: inline-block;
+                    transform: translateX(0);
+                    vertical-align: middle;
+                }
+                .button-icon {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            .banner__preview-buttons--button__github {
+                background-color: white;
+                border: 3px solid white;
+                color: black;
+                position: relative;
+                display: inline-block;
+            }
+            .banner__preview-buttons--button__live-preview {
+                background-color: rgba(122, 212, 116, 0.1);
+                border: 2px solid rgba(122, 212, 116, 1.0);
+                color: rgba(122, 212, 116, 1.0);
+                .button-icon {
+                    fill: #7ad474;
                 }
             }
         }
     }
 }
-
 .project-info-wrapper {
     position: relative;
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 4px;
     grid-row-gap: 4px;
-    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: auto auto;
-    // padding: 0 15px;
-
     .project-info-col {
         position: relative;
         overflow: hidden;
         padding: 40px;
         background: #1d1d1d;
-
         h4 {
             color: $portfolio-brand01;
             margin-bottom: 20px;
         }
-
         p {
             color: #8e8e8e;
             font-weight: 400;
             line-height: 30px;
             margin-bottom: 30px;
         }
+        ul:last-child {
+            margin-bottom: 0;
+        }
     }
 }
-
 .custom-list {
     list-style-type: none;
     padding: 0;
-
     li {
         margin-bottom: 6px;
         padding-top: 6px;

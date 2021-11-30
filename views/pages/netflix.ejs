@@ -16,7 +16,7 @@
     <!-- Sidebar/Navbar -->
     <%- include('../partials/_navbar.ejs') %>
     <main class="relative">
-        <section class="container">
+        <section class="container pt-100">
             <h1 class="project-name no-select">Netflix</h1>
             <div class="project-banner-wrapper">
                 <div class="banner">
@@ -25,13 +25,27 @@
                     </div>
                     <div class="banner__preview-buttons">
                         <div class="banner__preview-buttons--button">
-                            <a href="">
-                                <button>Live Preview</button>
+                            <a href="https://github.com/olivergreendev/netflix" target="_blank">
+                                <button class="banner__preview-buttons--button__github">
+                                    <span class="button-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="-74.4 -120.90175 644.8 725.4105"><path d="M165.9 389.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2 .6-2-1.3-4.3-4.3-5.2-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 0C106.1 0 0 105.3 0 244c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5 21.3 0 42.8 2.9 62.8 8.5 0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 449.8 496 354.9 496 244 496 105.3 383.5 0 244.8 0zM97.2 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                    </span>
+                                    <span class="button-text">
+                                        GitHub Repo
+                                    </span>
+                                </button>
                             </a>
                         </div>
                         <div class="banner__preview-buttons--button">
-                            <a href="">
-                                <button>Live Preview</button>
+                            <a href="https://node-netflix-oxg.herokuapp.com/" target="_blank">
+                                <button class="banner__preview-buttons--button__live-preview">
+                                    <span class="button-icon">
+                                        <svg style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M3.9,18.9V5.1c0-1.6,1.7-2.6,3-1.8l12,6.9c1.4,0.8,1.4,2.9,0,3.7l-12,6.9C5.6,21.5,3.9,20.5,3.9,18.9z" id="play"/></g></svg>
+                                    </span>
+                                    <span class="button-text">
+                                        Live Preview
+                                    </span>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -41,21 +55,23 @@
                 <div class="project-info-col">
                     <h4>About Netflix</h4>
                     <p>
-                        Netflix is a redesign of the popular online streaming service everyone knows and loves. I thought it would be great to do a modern rendition of it, incorporating some of my style and designs. It has been a great project to learn a lot of front-end practices and some back-end CRUD operations. 
+                        Netflix is a simplified redesign of the popular streaming service. I have always loved Netflixs' approach to their design and wanted to attempt my own rendition of it. This was a fun, and interesting project which tested my Front-End skills with components such as a vertical navbar, mouse-hover tooltips and dynamic carousels. This is a NodeJS application, with Express routing, EJS templating, and SCSS styling.
                     </p>
                     <h4>In Retrospect...</h4>
                     <ul class="custom-list">
                         <li>Utilise a front end framework for better use of components</li>
-                        <li>. . .</li>
-                        <li>. . .</li>
+                        <li>Use a third party library for the carousels</li>
+                        <li>Populate the carousels with data through local JSON or back-end dabatase</li>
+                        <li>Utilise a BEM approach for element naming</li>
                     </ul>
                 </div>
                 <div class="project-info-col">
                     <h4>Key Takeaways</h4>
                     <ul class="custom-list">
-                        <li>. . .</li>
-                        <li>. . .</li>
-                        <li>. . .</li>
+                        <li>More exposure to flexbox</li>
+                        <li>Fixed, vertical navbar</li>
+                        <li>Custom, vanilla JS carousels</li>
+                        <li>Serving EJS Partials as dynamic components</li>
                     </ul>
                     <h4>Technology Used</h4>
                     <ul class="custom-list">
@@ -63,14 +79,11 @@
                         <li>SCSS</li>
                         <li>Express</li>
                         <li>EJS</li>
-                        <li>MongoDB</li>
-                        <li>OAuth 2</li>
-                        <li>SliderJS</li>
+                        <li>Partials</li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="other-projects">
+            <!-- <div class="other-projects">
                 <div class="other-projects--title">
                     <h6 class="no-select secondary-text m-0" style="margin-bottom: 0.5rem;">OTHER PROJECTS</h6>
                 </div>
@@ -112,15 +125,15 @@
                         </a>
                     </div>
                 </div>
-            </div>
-
+            </div> -->
         </section>
         <!-- Background Glows -->
         <div class="bg-glow top right"></div>
         <div class="bg-glow bottom left"></div>
     </main>
     <%- include('../partials/_footer.ejs') %>
-
+    <!-- Notification Banner -->
+    <%- include('../partials/_notification-banner.ejs') %>
     <script src="/js/client-sidenav.js" async defer></script>
     <script src="/js/client-bg-glow-fade.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer></script>

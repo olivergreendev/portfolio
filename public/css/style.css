@@ -213,7 +213,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -479,6 +481,11 @@ nav .fas {
   padding: 0px;
 }
 
+.nav-links #hide_menu {
+  padding: 30px 22px 0 0;
+  text-align: right;
+}
+
 .nav-links ul li {
   list-style: none;
   display: inline-block;
@@ -547,6 +554,17 @@ nav .fas {
   max-width: 50%;
 }
 
+@media only screen and (max-width: 632px) {
+  .footer .copyright, .footer .social-icons {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .footer .copyright {
   color: #fff;
   font-weight: 400;
@@ -559,6 +577,12 @@ nav .fas {
 
 .footer .copyright #copyright--year::after {
   content: " 2021 Oliver Green - All rights reserved.";
+}
+
+@media only screen and (max-width: 632px) {
+  .footer .copyright {
+    text-align: center;
+  }
 }
 
 .footer .social-icons {
@@ -585,12 +609,20 @@ nav .fas {
   margin-left: 0;
 }
 
-.footer .social-icons .icon:nth-child(4) {
+.footer .social-icons .icon:nth-child(3) {
   margin-right: 0;
 }
 
 .footer .social-icons .icon:hover i {
   color: #f25264;
+}
+
+@media only screen and (max-width: 632px) {
+  .footer .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .notification-banner {
@@ -783,9 +815,11 @@ nav .fas {
   padding-bottom: 100%;
 }
 
-.top-projects .top-projects--wrapper .top-projects--project-item:hover .project-item--image {
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+@media only screen and (min-width: 1200px) {
+  .top-projects .top-projects--wrapper .top-projects--project-item:hover .project-item--image {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
 }
 
 .top-projects .top-projects--wrapper .top-projects--project-item .project-item--inner {
@@ -977,7 +1011,7 @@ nav .fas {
   text-align: center;
   font-weight: 700;
   color: #fff;
-  font-size: clamp(40px, 6vw, 120px);
+  font-size: clamp(60px, 9vw, 120px);
 }
 
 .project-banner-wrapper {
@@ -1025,18 +1059,12 @@ nav .fas {
       flex-wrap: wrap;
 }
 
-.project-banner-wrapper .banner .banner__preview-buttons .banner__preview-buttons--button {
-  margin: 0.5rem;
-}
-
 .project-banner-wrapper .banner .banner__preview-buttons button {
-  padding: 20px 30px;
-  border-radius: 16px;
+  padding: 10px;
+  border-radius: 10px;
   border: none;
+  margin: 0.5rem;
   font-family: 'Cubano', sans-serif;
-  background-color: rgba(122, 212, 116, 0.1);
-  border: 2px solid #7ad474;
-  color: #7ad474;
   letter-spacing: 1px;
   font-size: 16px;
   -webkit-transition: -webkit-transform 0.15s ease-out;
@@ -1046,8 +1074,38 @@ nav .fas {
 }
 
 .project-banner-wrapper .banner .banner__preview-buttons button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons button span {
+  display: inline-block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  vertical-align: middle;
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons button .button-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons .banner__preview-buttons--button__github {
+  background-color: white;
+  border: 3px solid white;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons .banner__preview-buttons--button__live-preview {
+  background-color: rgba(122, 212, 116, 0.1);
+  border: 2px solid #7ad474;
+  color: #7ad474;
+}
+
+.project-banner-wrapper .banner .banner__preview-buttons .banner__preview-buttons--button__live-preview .button-icon {
+  fill: #7ad474;
 }
 
 .project-info-wrapper {
@@ -1057,8 +1115,6 @@ nav .fas {
   grid-auto-columns: 1fr;
   grid-column-gap: 4px;
   grid-row-gap: 4px;
-  -ms-grid-columns: 0.5fr 1fr;
-      grid-template-columns: 0.5fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
 }
@@ -1080,6 +1136,10 @@ nav .fas {
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 30px;
+}
+
+.project-info-wrapper .project-info-col ul:last-child {
+  margin-bottom: 0;
 }
 
 .custom-list {
@@ -1154,8 +1214,8 @@ nav .fas {
 }
 
 @media only screen and (max-width: 480px) {
-  #hide_menu {
-    padding: 13px 8px 0 0 !important;
+  .project-info-wrapper .project-info-col {
+    padding: 20px;
   }
 }
 
@@ -1179,6 +1239,17 @@ nav .fas {
   .top-projects .top-projects--wrapper {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+  }
+  .project-info-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 811px) {
+  .project-info-wrapper {
+    -ms-grid-columns: 0.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.5fr;
   }
 }
 
@@ -1214,10 +1285,6 @@ nav .fas {
   }
   nav {
     padding-top: 30px;
-  }
-  #hide_menu {
-    text-align: right;
-    padding: 33px 52px 0px 0px;
   }
   #show_menu {
     padding: 0;

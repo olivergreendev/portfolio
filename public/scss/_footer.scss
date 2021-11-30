@@ -2,20 +2,22 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 .footer {
     flex-wrap: wrap;
-
     .copyright, .social-icons {
         flex: 0 0 50%;
         max-width: 50%;
+        @media only screen and (max-width: 632px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
-
     .copyright {
         color: $portfolio-brand01;
         font-weight: 400;
         font-size: 14px;
-
         #copyright--year {
             &::before {
                 content: "© ";
@@ -24,32 +26,33 @@
                 content: " 2021 Oliver Green - All rights reserved.";
             }
         }
+        @media only screen and (max-width: 632px) {
+            text-align: center;
+        }
     }
-
     .social-icons {
         justify-content: flex-end;
         flex-wrap: nowrap;
-
         .icon {
             cursor: pointer;
             margin: 0 20px;
-    
             i {
                 font-size: 25px;
                 color: #fff;
                 transition: color 0.2s ease;
             }
-    
             &:nth-child(1) {
                 margin-left: 0;
             }
-            &:nth-child(4) {
+            &:nth-child(3) {
                 margin-right: 0;
             }
-    
             &:hover i {
                 color: $portfolio-accent01;
             }
+        }
+        @media only screen and (max-width: 632px) {
+            justify-content: center;
         }
     }
 }
