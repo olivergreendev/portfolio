@@ -1,7 +1,9 @@
 const ProjectsRouter = require("express").Router();
-
 ProjectsRouter.get("/", (req, res) => {
     res.render("projects", { title: "Projects" });
+});
+ProjectsRouter.get("/projects", (req, res) => {
+    res.redirect('/projects');
 });
 ProjectsRouter.get("/netflix", (req, res) => {
     res.render("netflix", { title: "Netflix Redesign" });
@@ -18,5 +20,4 @@ ProjectsRouter.get("/shoppy", (req, res) => {
 ProjectsRouter.get("/yu-gi-oh", (req, res) => {
     res.render("yu-gi-oh", { title: "Yu-Gi-Oh! Card Search" });
 });
-
 module.exports = ProjectsRouter;
