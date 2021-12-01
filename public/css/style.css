@@ -643,22 +643,36 @@ nav .fas {
 }
 
 .notification-banner {
-  background-color: #263026;
-  color: #7ad474;
   display: block;
   font: bold 16px/40px sans-serif;
   height: 40px;
-  position: fixed;
   text-align: center;
   text-decoration: none;
-  bottom: -45px;
   width: 100%;
-  -webkit-animation: notification-banner 1s ease forwards;
-          animation: notification-banner 1s ease forwards;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.notification-banner.general {
+  position: fixed;
+  background-color: #263026;
+  color: #7ad474;
+  bottom: -45px;
+  -webkit-animation: notification-banner 1s ease forwards;
+          animation: notification-banner 1s ease forwards;
+}
+
+.notification-banner.project {
+  position: absolute;
+  background-color: rgba(10, 132, 255, 0.1);
+  color: #0a84ff;
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  bottom: 0;
+  -webkit-animation: work-in-progress-banner 1s ease forwards;
+          animation: work-in-progress-banner 1s ease forwards;
 }
 
 #notification-banner {
@@ -686,6 +700,32 @@ nav .fas {
   }
   100% {
     bottom: 0;
+  }
+}
+
+@-webkit-keyframes work-in-progress-banner {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes work-in-progress-banner {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1045,7 +1085,6 @@ nav .fas {
   position: relative;
   overflow: hidden;
   padding-top: 80px;
-  padding-bottom: 40px;
   background: #1d1d1d;
 }
 
@@ -1058,7 +1097,7 @@ nav .fas {
 
 .project-banner-wrapper .banner .banner__preview-buttons {
   text-align: center;
-  padding: 30px;
+  margin: 20px 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
