@@ -1,3 +1,8 @@
+/**
+* Mobile Devices: 360x640 through 414x896
+* Tablet Devices: 601x962 through 1280x800
+* Desktop Devices: 1024x768 through 1920x1080
+**/
 @media only screen and (max-width: 414px) {
     .intro {
         .intro-headshot {
@@ -13,34 +18,13 @@
             padding: 20px;
         }
     }
-}
-@media only screen and (max-width: 810px) {
-    .container {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .intro {
-        flex-direction: column;
-        .intro-headshot {
-            text-align: center !important;
-            img {
-                width: 250px;
-            }
+    .other-projects {
+        .other-projects--wrapper {
+            grid-template-columns: 1fr;
         }
     }
-    .top-projects .top-projects--wrapper {
-        grid-template-columns: 1fr !important;
-    }
-    .project-info-wrapper {
-        grid-template-columns: 1fr
-    }
 }
-@media only screen and (min-width: 811px) {
-    .project-info-wrapper {
-        grid-template-columns: 0.5fr 0.5fr;
-    }
-}
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 640px) {
     .nav-links {
         position: absolute;
         background: #000;
@@ -57,6 +41,9 @@
         ul {
             padding-top: 20px;
             margin: 0;
+            li:not(:last-child)::after {
+                margin: 5px auto;
+            }
             li:not(:last-child):hover::after {
                 width: 20% !important;
             }
@@ -81,9 +68,37 @@
         display: block;
     }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 810px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .intro {
+        flex-direction: column;
+        .intro-headshot {
+            text-align: center !important;
+            img {
+                width: 250px;
+            }
+        }
+    }
+    .top-projects .top-projects--wrapper {
+        grid-template-columns: 1fr !important;
+    }
     .project-info-wrapper {
-        // grid-template-columns: 1fr;
+        grid-template-columns: 1fr
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 810px) {
+    .other-projects {
+        .other-projects--wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media only screen and (min-width: 811px) {
+    .project-info-wrapper {
+        grid-template-columns: 0.5fr 0.5fr;
     }
 }
 @media only screen and (max-width: 1920px) {
@@ -92,8 +107,3 @@
         margin-left: -35px;
     }
 }
-/**
-* Mobile Devices: 360x640 through 414x896
-* Tablet Devices: 601x962 through 1280x800
-* Desktop Devices: 1024x768 through 1920x1080
-**/
