@@ -87,7 +87,7 @@ nav .fas {
         height: 2px;
         background: #f25264;
         display: block;
-        margin: 5px auto;
+        margin: 5px 0; // auto to animate from center
         transition: width 0.3s;
     }
     &:not(:last-child):hover::after {
