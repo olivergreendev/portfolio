@@ -12,7 +12,7 @@
     background-color: #263026;
     color: #7ad474;
     bottom: -45px;
-    animation: notification-banner 1s ease forwards;
+    animation: notification-banner 0.6s ease forwards;
 }
 .notification-banner.project {
     position: absolute;
@@ -20,7 +20,7 @@
     color: #0a84ff;
     transform: translateY(45px);
     bottom: 0;
-    animation: work-in-progress-banner 1s ease forwards;
+    animation: work-in-progress-banner 0.6s ease forwards;
 }
 #notification-banner {
     position: relative;
