@@ -660,8 +660,8 @@ nav .fas {
   background-color: #263026;
   color: #7ad474;
   bottom: -45px;
-  -webkit-animation: notification-banner 1s ease forwards;
-          animation: notification-banner 1s ease forwards;
+  -webkit-animation: notification-banner 0.6s ease forwards;
+          animation: notification-banner 0.6s ease forwards;
 }
 
 .notification-banner.project {
@@ -671,8 +671,8 @@ nav .fas {
   -webkit-transform: translateY(45px);
           transform: translateY(45px);
   bottom: 0;
-  -webkit-animation: work-in-progress-banner 1s ease forwards;
-          animation: work-in-progress-banner 1s ease forwards;
+  -webkit-animation: work-in-progress-banner 0.6s ease forwards;
+          animation: work-in-progress-banner 0.6s ease forwards;
 }
 
 #notification-banner {
@@ -1117,6 +1117,7 @@ nav .fas {
   border-radius: 10px;
   border: none;
   margin: 0.5rem;
+  height: 58px;
   font-family: 'Cubano', sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
@@ -1127,15 +1128,14 @@ nav .fas {
 }
 
 .project-banner-wrapper .banner .banner__preview-buttons button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .project-banner-wrapper .banner .banner__preview-buttons button span {
   display: inline-block;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  vertical-align: middle;
 }
 
 .project-banner-wrapper .banner .banner__preview-buttons button .button-icon {
