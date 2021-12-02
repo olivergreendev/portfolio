@@ -38,17 +38,18 @@
                 border-radius: 10px;
                 border: none;
                 margin: 0.5rem;
+                height: 58px;
                 font-family: 'Cubano', sans-serif;
                 letter-spacing: 1px;
                 font-size: 16px;
                 transition: transform 0.15s ease-out;
                 &:hover {
-                    transform: scale(1.05);
+                    // transform: scale(1.15);
+                    transform: translateY(-5px);
                 }
                 span {
                     display: inline-block;
                     transform: translateX(0);
-                    vertical-align: middle;
                 }
                 .button-icon {
                     width: 32px;
