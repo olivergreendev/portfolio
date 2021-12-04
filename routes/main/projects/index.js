@@ -20,4 +20,8 @@ ProjectsRouter.get("/shoppy", (req, res) => {
 ProjectsRouter.get("/yu-gi-oh", (req, res) => {
     res.render("yu-gi-oh", { title: "Yu-Gi-Oh! Card Search" });
 });
+// 404
+ProjectsRouter.get('*', function(req, res) {
+    res.status(404).render("404", { title: "404" });
+});
 module.exports = ProjectsRouter;

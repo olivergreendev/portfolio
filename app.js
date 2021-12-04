@@ -16,7 +16,7 @@ app.use(favicon(path.join(__dirname, "public", "img", "favicon-2.ico")));
 require("./routes/index")(app);
 // 404
 app.get('*', function(req, res) {
-    res.status(404).send('404');
+    res.status(404).render("404", { title: "404" });
 });
 //Server Activation
 app.listen(port, () => {

@@ -384,6 +384,11 @@ button:hover {
   }
 }
 
+.greyed-out {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .h1, h1 {
   font-size: 2.5rem;
 }
